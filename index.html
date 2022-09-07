@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="index.css">
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+</head>
+<body>
+
+    <div class="pos" id="blur">
+    <div><span class="task">Task</span> <span class="list">List</span></div>
+
+    <div class="container">
+    <div class="pos2"><img class="img123" onclick="openpopup()" src="plus.png" height="35px" width="35px">
+             <span class="span123">Add List</span>
+    </div>
+    </div> 
+    <!-- <div class="display">No task to Display</div> -->
+    <div class="to-dos" id="toDocontainer">
+    </div> </div>
+     
+<div class="to-dos-list" id="toDoList"></div>
+<!-- Popup -->
+
+    <div class="box" id="popup">
+        <span class="box1">Add New Task</span> <br>
+        <label for="newlist"></label>
+        <input type="text" placeholder="Add New List" name="newlist" id="inputfield"> <br> <br> <br>
+        <button onclick="closepopup()" type="button" class="button1" id="addTodo">Add</button>
+        <button onclick="closepopup()" type="button" class="button2">Close</button>
+    </div>
+ 
+    <div class="box123" id="popup123">
+            <span class="box1">Add New Item</span> <br>
+            <label for="newlist1"></label>
+            <input type="text" placeholder="Add New List" name="newlist1" id="inputfieldList"> <br> <br> <br>
+            <button onclick="closepopup123()" type="button" class="button1" id="addToList">Add</button>
+            <button onclick="closepopup123()" type="button" class="button2">Close</button>
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
